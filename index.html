@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="styles.css" />
+        <title>DayStart</title>
+    </head>
+    <body>
+        <h1 class="hidden" id="time-now"></h1>
+
+        <section class="hidden" id="login-location">
+            <form id="login-form">
+                <input id="login-input" required type="text" maxlength="15" placeholder="What is your name?" />
+                <input id="login-button" type="submit" value="Log In" />
+            </form>
+        </section>
+        
+        <section id="memo-location">
+            <form id="memo-form">
+                <input type="text" placeholder="Write a memo" />
+            </form>
+            <ul id="memo-list"></ul>
+        </section>
+
+        <section id="sidebar">
+            <h3 id="day-info"></h3>
+            <h3 class="hidden" id="logined-message"></h3>
+            <div id="weather">
+                <span></span>
+                <span></span>
+            </div>
+        </section>
+
+        <script src="login.js"></script>
+        <script src="time.js"></script>
+        <script src="memo.js"></script>
+        <script src="weather.js"></script>
+        <script src="bg.js"></script>
+    </body>
+</html>
