@@ -1,0 +1,94 @@
+body{
+    margin: 0;
+    border: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+}
+
+#sidebar{
+    background-color: black;
+    opacity: 0.5;
+    bottom: 0;
+    width: 100%;
+    position: fixed;
+    display: none;
+    justify-content: space-between;
+}
+
+#day-info, #weather, #logined-message{
+    color: whitesmoke;
+}
+
+#time-now{
+    font-size: 100px;
+    margin-bottom: 150px;
+}
+
+.backgroundImg{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: -1;
+}
+
+#login-location{
+    background-color: rgba(255, 255, 255, 0.75);
+    padding: 5px;
+    top: 15px;
+    border-radius: 15px;
+}
+
+#memo-location{
+    background-color: rgba(255, 255, 255, 0.45);
+    padding: 25px;
+    display: none;
+    flex-direction: column;
+    position: fixed;
+    border-radius: 30px;
+    right: 30px;
+
+}
+
+#memo-form input{
+    border-bottom-color: black;
+    border-width: 0px 0px 2px 0px;
+    outline: none;
+    background-color: rgba(255, 255, 255, 0);
+    size: 25px;
+}
+
+#login-input{
+    border-width: 0px;
+    outline: none;
+    background-color: rgba(255, 255, 255, 0);
+    size: 25px;
+    width: 300px;
+}
+
+#login-button{
+    border-width: 0px;
+    outline: none;
+    background-color: rgba(255, 255, 255, 0);
+    size: 25px;
+}
+
+button{
+    border: 0;
+    background-color: rgba(255, 255, 255, 0);
+}
+
+h1, h3{
+    margin: 0;
+}
+
+input::placeholder{
+    color: black;
+    font-style: italic;
+    text-align:center;
+}
+
+.hidden{
+    display: none;
+}
